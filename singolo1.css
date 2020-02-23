@@ -38,6 +38,13 @@ p.title {
   letter-spacing: -0.7px;
 }
 
+p.red {
+  color: red;
+  position: relative;
+  top: 35px;
+  left: 146px;
+}
+
 nav {
   position: relative;
   
@@ -73,6 +80,9 @@ li {
   font-weight: 700;
   text-align: left;
   cursor: pointer;
+}
+li:hover {
+  color: #f06c64;
 }
 
 .slider {
