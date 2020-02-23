@@ -1,0 +1,279 @@
+html {
+  padding: 0;
+  width: 1020px;
+}
+
+body {
+  margin: auto;
+  width: 1020px;
+  display: block;
+}
+
+header {
+  background-color: #2d303a;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 89px 6px;
+}
+
+.header {
+  position: relative;
+  left: 40;
+  top: 43;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p.title {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  font-size: 25px;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -0.7px;
+}
+
+nav {
+  position: relative;
+  
+}
+
+.header-bottom {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #323746;
+
+}
+
+ul {
+  position: relative;
+  right: 40px;
+  top: 40px;
+  bottom: 36;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  word-spacing: 3px;
+}
+
+li {
+  position: relative;
+  display: inline;
+  font-size: 12px;
+  line-height: 6px;
+  padding-left: 25px;
+  color: #f06c64;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  
+}
+
+.slider {
+  display: block;
+  top:-6px;
+  position: relative;
+  z-index: -1;
+}
+
+.bg {
+  background-color: #f06c64;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+.bg-bottom {
+  background-color: #ea676b;
+  position: relative;
+  height: 15px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  z-index: -1;
+  top:-9px;
+}
+
+.chev-left {
+  position: absolute;
+  left: 42px;
+  top: 287px;
+}
+
+.chev-right {
+  position: absolute;
+  left: 964px;
+  top: 287px;
+}
+
+.services {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  position: relative;
+}
+
+.services-bg {
+  position: relative;
+  background-color: #f2f2f2;
+  height: 495px;
+  top: -15px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+
+
+.services-bg-bottom {
+  position: relative;
+  background-color: #ffffff;
+  height: 6px;
+  top:-3px;
+  z-index: -2;
+}
+
+
+
+.iphone-vertical {
+  position: absolute;
+  top: 59px;
+  left: 112px;
+  
+}
+
+.iphone-horizontal {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 56px;
+  left: 545px;
+}
+
+.iphone-vertical-shadow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.iphone-horizontal-shadow {
+  position: absolute;
+  left: 0px;
+  top: -24px;
+  transform: rotateX(180deg) rotate(180deg);
+}
+
+.i-vertical-image {
+  position: absolute;
+  z-index: 9;
+  width: 375px;
+  height: 665px;
+  background-position: 0px 0px;
+  background-image: url(assets/Layer\ 6.png);
+}
+
+
+.i-vertical-screen {
+  position: absolute;
+  left: 14px;
+  top: 65px;
+  width: 188px;
+  height: 333px;
+  background-image: url(assets/Layer\ 6.png);
+  background-position: 0px 0px;
+}
+
+.i-horizontal-screen {
+  position: absolute;
+  left: 14px;
+  top: 65px;
+  width: 188px;
+  height: 333px;
+  background-image: url(assets/Layer\ 5.png);
+  background-position: 0px 0px;
+}
+
+.services-title {
+  position: absolute;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.3px;
+  top: 69px;
+  left: 40px;
+}
+
+.fusce-dapibus {
+  position: absolute;
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: -0.08px;
+  top: 113px;
+  left: 40px;
+}
+
+.grid-table {
+  display: grid;
+  position: relative;
+  margin: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+article {
+  position: relative;
+  height: 100px;
+  width: 300px;
+}
+p.article-title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  position: absolute;
+  left: 70px;
+  top: 3px;
+
+}
+
+p.article-text {
+  width: 219px;
+  height: 128px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  top: 30px;
+  left:70px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+img.service-img {
+  position: absolute;
+  top: 4px;
+  left: -8px;
+}
