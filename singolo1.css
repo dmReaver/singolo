@@ -1,8 +1,3 @@
-html {
-  padding: 0;
-  width: 1020px;
-}
-
 body {
   margin: auto;
   width: 1020px;
@@ -14,6 +9,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 89px 6px;
+  z-index: 2;
 }
 
 .header {
@@ -51,6 +47,7 @@ nav {
   grid-column-start: 1;
   grid-column-end: 3;
   background-color: #323746;
+  z-index: 2;
 
 }
 
@@ -71,18 +68,18 @@ li {
   font-size: 12px;
   line-height: 6px;
   padding-left: 25px;
-  color: #f06c64;
+  color: #ffffff;
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  
+  cursor: pointer;
 }
 
 .slider {
   display: block;
   top:-6px;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .bg {
@@ -109,12 +106,23 @@ li {
   position: absolute;
   left: 42px;
   top: 287px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.chev-left:hover {
+  cursor: pointer;
 }
 
 .chev-right {
   position: absolute;
   left: 964px;
   top: 287px;
+  cursor: pointer;
+  z-index: 10;
+}
+.chev-rigth:hover {
+  cursor: pointer;
 }
 
 .services {
@@ -276,4 +284,8 @@ img.service-img {
   position: absolute;
   top: 4px;
   left: -8px;
+}
+
+h1 {
+  visibility: hidden;
 }
