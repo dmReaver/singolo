@@ -125,7 +125,7 @@ h1 span {
 nav {
     position: relative;
     display: inline;
-    top: -7px;
+    top: -23px;
     left: -1px;
 }
 
@@ -165,7 +165,7 @@ li:hover {
 .chev-left {
     position: relative;
     left: 42px;
-    top: 287px;
+    top: 282px;
     cursor: pointer;
     z-index: 10;
   }
@@ -177,7 +177,7 @@ li:hover {
 .chev-right {
     position: relative;
     left: 964px;
-    top: 287px;
+    top: -1492px;
     cursor: pointer;
     z-index: 10;
 }
