@@ -1,13 +1,14 @@
 * {
+    margin-top: 0px;
+}
+
+body {
     margin: auto;
     position: relative;
     width: 1020px;
     padding: 0px;
+    /* top: 0px */
     /* background-color: black; */
-}
-
-div {
-    position: relative;
 }
 
 header {
@@ -25,6 +26,7 @@ section.slider div.header-bottom{
 
 section.slider {
     position: relative;
+    display: block;
     width: 1020px;
     height: 600px;
     background-color: #f06c64;
@@ -193,18 +195,17 @@ li:hover {
 
 div.bg {
     position: relative;
-    height: 600px;
+    display: inline;
+    /* height: 600px; */
 }
 
 
 
 div.iphone-vertical {
     position: relative;
-    padding: 0px;
-    margin: 0px;
     width: 215px;
-    height: 500px;
-    top: 59px;
+    height: 458px;
+    top: 27px;
     left: 112px;
     
   }
@@ -217,11 +218,11 @@ div.iphone-vertical {
 
   
   .iphone-horizontal {
-    width: 215px;
     position: relative;
+    width: 215px;
     transform: rotate(90deg);
-    top: 0px;
-    left: 0px;
+    top: -848px;
+    left: 135px;
   }
   
   .iphone-vertical-shadow {
@@ -235,7 +236,7 @@ div.iphone-vertical {
   .iphone-horizontal-shadow {
     position: relative;
     left: 0px;
-    top: -24px;
+    top: -819px;
     transform: rotateX(180deg) rotate(180deg);
   }
   
@@ -251,7 +252,7 @@ div.iphone-vertical {
   
   .i-vertical-screen {
     position: relative;
-    left: 1px;
+    left: 14px;
     top: -402px;
     width: 188px;
     height: 333px;
@@ -262,7 +263,7 @@ div.iphone-vertical {
   .i-horizontal-screen {
     position: relative;
     left: 14px;
-    top: 65px;
+    top: -397px;
     width: 188px;
     height: 333px;
     background-image: url(assets/Layer\ 5.png);
