@@ -1,0 +1,280 @@
+* {
+    margin: auto;
+    position: relative;
+    width: 1020px;
+    padding: 0px;
+    /* background-color: black; */
+}
+
+div {
+    position: relative;
+}
+
+header {
+    position: relative;
+    height: 89px;
+    background-color: #2d303a;
+}
+
+section.slider div.header-bottom{
+    position: relative;
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+section.slider {
+    position: relative;
+    width: 1020px;
+    height: 600px;
+    background-color: #f06c64;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    width: 1020px;
+}
+
+section.services {
+    /* position: relative; */
+    /* top: 5px; */
+    width: 1020px;
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+section.services div.bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+section.portfolio {
+    position: relative;
+    width: 1020px;
+    height: 869px;
+    background-color: #2d303a;
+}
+
+section.portfolio div.services-bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+section.about-us {
+    width: 1020px;
+    height: 734px;
+    background-color: #f2f2f2;
+}
+
+section.about-us div.portfolio-bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+section.get-a-quote {
+    width: 1020px;
+    height: 654px;
+    background-color: #f06c64;
+}
+
+section.get-a-quote div.about-us-bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+footer {
+    width: 1020px;
+    height: 82px;
+    background-color: #2d303a;
+}
+
+footer div.get-a-quote-bg-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+
+div.header {
+    display: inline;
+    position: relative;
+    top: 42px;
+    left: 40px;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: -0.7px;
+}
+h1 span {
+    color: red;
+}
+
+nav {
+    position: relative;
+    display: inline;
+    top: -7px;
+    left: -1px;
+}
+
+header div.wrapper {
+    display: inline;
+}
+
+ul {
+    position: relative;
+    right: 40px;
+    top: 40px;
+    bottom: 36;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    word-spacing: 3px;
+}
+
+li {
+    position: relative;
+    display: inline;
+    font-size: 12px;
+    line-height: 6px;
+    padding-left: 25px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #f06c64;
+}
+
+
+.chev-left {
+    position: relative;
+    left: 42px;
+    top: 287px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+.chev-left:hover {
+    cursor: pointer;
+}
+  
+.chev-right {
+    position: relative;
+    left: 964px;
+    top: 287px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.chev-rigth:hover {
+    cursor: pointer;
+}
+
+/* section.slider div.wrapper {
+    height: 600px;
+    width: 1020px;
+    padding: 0px;
+    margin: 0px;
+} */
+
+div.bg {
+    position: relative;
+    height: 600px;
+}
+
+
+
+div.iphone-vertical {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    width: 215px;
+    height: 500px;
+    top: 59px;
+    left: 112px;
+    
+  }
+
+  .iphone-vertical-img {
+      position: relative;
+      top: -5px;
+      width: 215px;
+  }
+
+  
+  .iphone-horizontal {
+    width: 215px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 0px;
+    left: 0px;
+  }
+  
+  .iphone-vertical-shadow {
+    position: relative;
+    left: 0px;
+    top: -800px;
+    width: 240px;
+    transform: rotate(180deg);
+  }
+  
+  .iphone-horizontal-shadow {
+    position: relative;
+    left: 0px;
+    top: -24px;
+    transform: rotateX(180deg) rotate(180deg);
+  }
+  
+  .i-vertical-image {
+    position: relative;
+    z-index: 9;
+    width: 375px;
+    height: 665px;
+    background-position: 0px 0px;
+    background-image: url(assets/Layer\ 6.png);
+  }
+  
+  
+  .i-vertical-screen {
+    position: relative;
+    left: 1px;
+    top: -402px;
+    width: 188px;
+    height: 333px;
+    background-image: url(assets/Layer\ 6.png);
+    background-position: 0px 0px;
+  }
+  
+  .i-horizontal-screen {
+    position: relative;
+    left: 14px;
+    top: 65px;
+    width: 188px;
+    height: 333px;
+    background-image: url(assets/Layer\ 5.png);
+    background-position: 0px 0px;
+  }
+
+
+  div.iphone-horizontal-img {
+    position: relative;
+    width: 500px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 56px;
+    left: 545px;
+  }
