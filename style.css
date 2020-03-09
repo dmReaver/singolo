@@ -50,6 +50,7 @@ section.services div.bg-bottom {
     width: 1020px;
     height: 6px;
     background-color: #ea676b;
+    top: 0px;
 }
 
 section.portfolio {
@@ -67,7 +68,7 @@ section.portfolio div.services-bg-bottom {
 
 section.about-us {
     width: 1020px;
-    height: 734px;
+    height: 733px;
     background-color: #f2f2f2;
 }
 
@@ -279,3 +280,455 @@ div.iphone-vertical {
     top: 56px;
     left: 545px;
   }
+
+  .services-title {
+    position: absolute;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.3px;
+    top: 75px;
+    left: 40px;
+  }
+
+  .fusce-dapibus {
+    position: absolute;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.08px;
+    top: 120px;
+    left: 40px;
+  }
+
+  .grid-table {
+    display: grid;
+    position: relative;
+    margin: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    top: 164px;
+  }
+
+  article {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 4px;
+  }
+
+  p.article-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    position: absolute;
+    left: 70px;
+    top: 3px;
+  
+  }
+  
+  p.article-text {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left:70px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  
+  img.service-img {
+    position: absolute;
+    top: 4px;
+    left: -8px;
+  }
+  
+
+  section.portfolio {
+    /* width: 940px; */
+    margin: auto;
+    height: 870px;
+    background-color: #2d303a;
+}
+
+section.portfolio h2 {
+    position: relative;
+    margin: 0px;
+    top: 70px;
+    left: 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+section.portfolio p {
+    position: relative;
+    top: 96px;
+    left: 40px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: -0.23px;
+}
+
+.portfolio nav {
+    position: relative;
+    top: 62px;
+    left: 40px;
+}
+
+.portfolio nav a{
+    width: 57px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #2d303a;
+    border: 1px solid #666d89;
+    padding: 3px 7.3px;
+    margin-right: 3.8px;
+
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+
+    text-decoration: none;
+}
+
+.pictures {
+    position: relative;
+    top: 80px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* grid-gap: 20px 20px; */
+}
+
+.pictures img {
+    position: relative;
+    width: 220px;
+    height: 187px;
+    background-color: #464b5e;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+
+section.about-us {
+    /* padding: 20px; */
+    position: relative;
+
+    margin: auto;
+    width: 1020px;
+    height: 733px;
+    background-color: #f2f2f2;
+}
+
+
+section.about-us h2 {
+    position: relative;
+    padding: 40px;
+    top: 28px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.7px;
+    word-spacing: -1.7px;
+}
+
+section.about-us p {
+    position: relative;
+    top: -11px;
+    margin: auto;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+section.contacts {
+    position: relative;
+    top: 37px;
+    width: 940px;
+    padding: 0px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+section.contact figure {
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: #464b5e;
+}
+
+section.contact h3 {
+    position: relative;
+    top: 17px;
+    left: -1px;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+section.contact p{
+    position: relative;
+    top: 8px;
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+section.social {
+    display: inline;
+    position: relative;
+    top: -101px;
+    left: 1px;
+}
+
+section.social img {
+    margin-right: 3px;
+}
+
+h2.get-a-quote {
+    position: relative;
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    top: 68px;
+    left: 39px;
+    letter-spacing: 0.3px;
+}
+
+p.get-a-quote-paragraph {
+    position: relative;
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    left: 40px;
+    margin: 0px;
+    top: 70px;
+    letter-spacing: -0.06px;
+}
+
+div.layout-3-column {
+    position: relative;
+    margin: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 117px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+input {
+    width: 615px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border-color: #d6564f;
+    
+}
+
+.layout-3-column {
+    padding: 0px 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+form {
+    display: block;
+    width: 640px;
+    position: relative;
+    top: 0px;
+}
+
+form input {
+    margin-bottom: 12px;
+}
+
+div.contact-information {
+    display: inline;
+    margin: 0px;
+}
+
+div.contact-information h4 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    word-spacing: -2px;
+    top: 2px;
+    position: relative;
+}
+
+
+div.contact-information p {
+    position: relative;
+    top: -14px;
+    left : 0px;
+    
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+div.contact-info span{
+    position: relative;
+    top:-54px;  
+    display: block;
+    padding-bottom:3px;
+    height: 12px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    word-spacing: -2px;
+}
+
+
+div.bg-bottom {
+    display: block;
+    height: 6px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    background-color: #ea676b;
+    top: 202px;
+}
+
+footer div.wrapper{
+    width: 1020px;
+    margin: auto;
+    padding: 0px;
+    
+    height: 82px;
+    background-color: #2d303a;
+}
+
+textarea {
+    width: 615px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    overflow: hidden;
+}
+
+input::placeholder {
+    position: relative;
+    top: 1px;
+    left: 13px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+  }
+
+textarea::placeholder {
+    position: relative;
+    top: 5px;
+    left: 13px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    overflow: hidden;
+  }
+
+
+  div.media {
+    /* display: inline; */
+    position: relative;
+    left: 828px;
+    top: -13px;
+    /* top: -119px; */
+    /* left: 1px; */
+    /* width: 30px; */
+  }
+
+  div.media img {
+      width: 32px;
+      padding-right: 4px;
+      color: khaki;
+  }
+
+  div.wrapper p img{
+      width: 92px;
+      position: relative;
+      top: 30px;
+      left: 42px;
+  }
+
+  /* section.about-us div.wrapper {
+      position: relative;
+      top: -6px;
+  } */
