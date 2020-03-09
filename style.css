@@ -425,11 +425,13 @@ section.portfolio p {
     position: relative;
     top: 80px;
     left: 40px;
+    height: 620px;
+    width: 960px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    /* grid-gap: 20px 20px; */
+    grid-gap: ;
 }
 
 .pictures img {
@@ -437,7 +439,7 @@ section.portfolio p {
     width: 220px;
     height: 187px;
     background-color: #464b5e;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     /* margin-bottom: 20px; */
 }
 
