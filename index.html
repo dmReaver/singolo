@@ -8,39 +8,38 @@
   </head>
   <body>
 
-    <header>
-      <div class="wrapper">
-        <div class="header">
-          <h1>SINGOLO<span class="title red">*</span></h1>
-          <!-- <p class="title">SINGOLO<p class="title red">*</p></p> -->
+    <header class="header" id="header">
+      <div class="wrapper header__wrapper">
+        <div class="logo">
+          <h1 class="logo__title">
+            SINGOLO
+          </h1>
         </div>
-        <nav>
-          <ul>
-            <li>HOME</li>
-            <li>SERVICE</li>
-            <li>PORFOLIO</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-          </ul>
+        <nav class="menu">
+          <a class="menu__link menu__link_active" href="#header" active>HOME</a>
+          <a class="menu__link" href="#slider">SERVICES</a>
+          <a class="menu__link" href="#portfolio">PORTFOLIO</a>
+          <a class="menu__link" href="#about-us">ABOUT</a>
+          <a class="menu__link" href="#get-a-quote">CONTACT</a>
         </nav>
         
       </div>
     </header>
 
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="wrapper">
         <div class="header-bottom"></div>
         <div class="bg">
           <img class="chev-left" src="assets/chev.png">
           <div class="iphone-vertical">
-            <img class="iphone-vertical-img" src="assets/Base.png">
+            <img class="iphone-vertical-img" src="assets/images/Base.png">
             <div class="i-vertical-screen"></div>
-            <img class="iphone-vertical-shadow" src="assets/Shadow.png">
+            <img class="iphone-vertical-shadow" src="assets/images/Shadow.png">
           </div>
           <div class="iphone-horizontal">
-            <img class="iphone-horizontal-img" src="assets/Base.png">
+            <img class="iphone-horizontal-img" src="assets/images/Base.png">
             <div class="i-horizontal-screen"></div>
-            <img class="iphone-horizontal-shadow" src="assets/Shadow.png">
+            <img class="iphone-horizontal-shadow" src="assets/images/Shadow.png">
           </div>
           <img class="chev-right" src="assets/chev_right.png">
         </div>
@@ -49,7 +48,7 @@
     </section>
 
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="wrapper">
         <div class="bg-bottom"></div>
         <div class="services-bg">
@@ -94,7 +93,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="wrapper">
         <div class="services-bg-bottom"></div>
         <h2>Portfolio</h2>
@@ -122,7 +121,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="wrapper">
         <div class="portfolio-bg-bottom"></div>
         <h2>About Us</h2>
@@ -165,7 +164,7 @@
       </div>
     </section>
 
-    <section class="get-a-quote">
+    <section class="get-a-quote" id="get-a-quote">
       <div class="wrapper">
         <div class="about-us-bg-bottom"></div>
           <h2 class="get-a-quote">Get a Quote</h2>
