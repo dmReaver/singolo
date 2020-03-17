@@ -26,11 +26,43 @@
     </header>
 
     <section class="slider" id="slider">
-      <div class="slider__bg">
+      <!-- <div class="slider__bg">
         <div class="slider__bg slider_main"></div>
         <div class="slider__bg slider_border"></div>
+      </div> -->
+      <div class="slider-control">
+        <img class="slider-control__left" src="assets/images/chev.png">
+        <img class="slider-control__right" src="assets/images/chev_right.png">
+      </div> 
+
+      <div class="slider__wrapper">
+        
+        <div class="slider__item">
+          <div class="slider__bg">
+            <div class="slider__bg slider_main"></div>
+            <div class="slider__bg slider_border"></div>
+          </div>
+          <div class="slider__content">
+            <div class="iphone iphone_vertical">
+              <img class="iphone__base" src="assets/images/Base.png">
+              <div class="iphone__screen"></div>
+              <img class="iphone__shadow" src="assets/images/Shadow.png">
+            </div>
+    
+            <div class="iphone iphone-horizontal">
+              <img class="iphone__base" src="assets/images/Base.png">
+              <div class="iphone__screen iphone__screen_layer5"></div>
+              <img class="iphone__shadow iphone__shadow_horiznotal" src="assets/images/Shadow.png">
+            </div>
+          </div>
+          
+        </div>
+        <div class="slider__item slider__item_inactive">
+          <img src="assets/images/slide2.svg" alt="slide_2">
+        </div>
       </div>
-      <div class="slider__content">
+
+      <!-- <div class="slider__content">
         <div class="iphone iphone_vertical">
           <img class="iphone__base" src="assets/images/Base.png">
           <div class="iphone__screen"></div>
@@ -42,17 +74,8 @@
           <div class="iphone__screen iphone__screen_layer5"></div>
           <img class="iphone__shadow iphone__shadow_horiznotal" src="assets/images/Shadow.png">
         </div>
-
-        <!-- <div class="iphone-horizontal">
-          <img class="iphone-horizontal-img" src="assets/images/Base.png">
-          <div class="i-horizontal-screen"></div>
-          <img class="iphone-horizontal-shadow" src="assets/images/Shadow.png">
-        </div> -->
-      </div>
-      <div class="slider-control">
-        <img class="slider-control__left" src="assets/images/chev.png">
-        <img class="slider-control__right" src="assets/images/chev_right.png">
-      </div>        
+      </div> -->
+       
     </section>
 
 
@@ -61,11 +84,11 @@
         <div class="services__bg services_main"></div>
         <div class="services__bg services_border"></div>
       </div>
-      <div class="section-header">
-        <div class="section-header__name">
+      <div class="services-header">
+        <div class="services-header__name">
           <p>Our Services</p>
         </div>
-        <div class="section-header__description">
+        <div class="services-header__description">
           <p class="fusce-dapibus">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </div>
       </div>
@@ -132,31 +155,45 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-      <div class="wrapper">
-        <div class="services-bg-bottom"></div>
-        <h2>Portfolio</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <nav>
-          <a href="#">All</a>
-          <a href="#">Web Design</a>
-          <a href="#">Graphic Design</a>
-          <a href="#">Artwork</a>
-        </nav>
-        <section class="pictures">
-          <img src="assets/images/Image_11.png" alt="picture_01">
-          <img src="assets/images/Image_08.png" alt="picture_02">
-          <img src="assets/images/Image_05.png" alt="picture_03">
-          <img src="assets/images/Image_02.png" alt="picture_04">
-          <img src="assets/images/Image_10.png" alt="picture_05">
-          <img src="assets/images/Image_07.png" alt="picture_06">
-          <img src="assets/images/Image_04.png" alt="picture_07">
-          <img src="assets/images/Image_01.png" alt="picture_08">
-          <img src="assets/images/Image_09.png" alt="picture_09">
-          <img src="assets/images/Image_06.png" alt="picture_10">
-          <img src="assets/images/Image_03.png" alt="picture_11">
-          <img src="assets/images/Image_12.png" alt="picture_12">
-        </section>
+      <div class="portfolio-bg">
+        <div class="portfolio-bg__main"></div>
+        <div class="portfolio-bg__border"></div>
       </div>
+
+      <div class="portfolio-header">
+        <div class="portfolio-header__name">Portfolio</div>
+        <div class="portfolio-header__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
+      </div>
+
+      <div class="filter-list">
+        <span class="filter-list__item">
+          <a class="filter-list__text filter-list__text_border filter-list__item_active">All</a>
+        </span>
+        <span class="filter-list__item">
+          <a class="filter-list__text filter-list__text_border">Web Design</a>
+        </span>
+        <span class="filter-list__item">
+          <a class="filter-list__text filter-list__text_border">Graphic Design</a>
+        </span>
+        <span class="filter-list__item">
+          <a class="filter-list__text filter-list__text_border">Artwork</a>
+        </span>
+      </div>
+      <section class="pictures">
+        <img src="assets/images/Image_11.png" alt="picture_01">
+        <img src="assets/images/Image_08.png" alt="picture_02">
+        <img src="assets/images/Image_05.png" alt="picture_03">
+        <img src="assets/images/Image_02.png" alt="picture_04">
+        <img src="assets/images/Image_10.png" alt="picture_05">
+        <img src="assets/images/Image_07.png" alt="picture_06">
+        <img src="assets/images/Image_04.png" alt="picture_07">
+        <img src="assets/images/Image_01.png" alt="picture_08">
+        <img src="assets/images/Image_09.png" alt="picture_09">
+        <img src="assets/images/Image_06.png" alt="picture_10">
+        <img src="assets/images/Image_03.png" alt="picture_11">
+        <img src="assets/images/Image_12.png" alt="picture_12">
+      </section>
+
     </section>
 
     <section class="about-us" id="about-us">

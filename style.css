@@ -108,6 +108,7 @@ body {
     top: 95px;
     left: 0px;
     position: absolute;
+    overflow: hidden;
 }
 
 .slider__bg {
@@ -136,21 +137,43 @@ body {
     background: #EA676B;
 }
 
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+
+.slider__item {
+    position: absolute;
+    width: 1020px;
+    height: 594px;
+    left: 0px;
+    top: 0px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.slider__item_inactive {
+    visibility: hidden;
+}
+
 .slider__content {
     position: absolute;
     width: 796px;
     height: 483px;
     left: 112px;
     top: 54px;
+    flex: 0 0 50%;
 }
 
 .slider-control {
     position: absolute;
     width: 940px;
     height: 27px;
-    left: 40px;
-    top: 281px;
-    z-index: 0;
+    left: 41px;
+    top: 280px;
+    z-index: 1;
 }
 
 .slider-control__left {
@@ -206,14 +229,14 @@ body {
     background: #FFFFFF;
 }
 
-.section-header {
+.services-header {
     position: absolute;
     width: 936px;
     height: 101px;
     left: 40px;
     top: 59px;
 }
-.section-header__name {
+.services-header__name {
     position: relative;
     width: 172px;
     height: 36px;
@@ -234,7 +257,7 @@ body {
     color: #666D89;
 }
 
-.section-header__description {
+.services-header__description {
     position: relative;
     width: 940px;
     height: 47px;
@@ -335,24 +358,130 @@ body {
 
     color: #767E9E;
 }
-
-
-/* section.services {
+.portfolio {
     position: absolute;
-    top: 695px;
     width: 1020px;
-    height: 500px;
-    background-color: #f2f2f2;
-} */
+    height: 870px;
+    left: 0px;
+    top: 1195px;
+}
 
-/* section.services div.bg-bottom {
+.portfolio-bg {
+    position: absolute;
+    width: 1020px;
+    height: 870px;
+    left: 0px;
+    top: 0px;
+}
+
+.portfolio-bg__main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1020px;
+    height: 864px;
+    background: #2D303A;
+}
+
+.portfolio-bg__border {
+    position: relative;
     width: 1020px;
     height: 6px;
-    background-color: #ea676b;
-    top: 0px;
-} */
+    left: 0px;
+    top: 864px;
+    background: #323746;
+}
 
-section.portfolio {
+.portfolio-header {
+    position: relative;
+    width: 936px;
+    height: 100.82px;
+    left: 40px;
+    top: 59px;
+}
+
+.portfolio-header__name {
+    position: relative;
+    width: 130px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #666D89;
+}
+
+.portfolio-header__description {
+    position: relative;
+    width: 936px;
+    height: 46.95px;
+    left: 0px;
+    top: 14px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767E9E;
+}
+
+.filter-list {
+    position: absolute;
+    display: flex;
+    width: 320px;
+    height: 22px;
+    left: 40px;
+    top: 155px;
+}
+
+
+.filter-list__text {
+    position: relative;
+    display: inline;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #767E9E;
+}
+
+.filter-list__text_border {
+    border: 1px solid #767E9E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2px 6.5px;
+    margin-right: 8.9px;
+}
+
+.filter-list__item_active {
+    border-color: white;
+    color: white;
+}
+
+.filter-list__text_border:not(.filter-list__item_active):hover {
+    cursor: pointer;
+}
+
+.pictures {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4,1fr);
+    position: absolute;
+    top: 195px;
+    left: 40px;
+    /* grid-gap: 0px; */
+    width: 960px;
+    height: 620px;
+}
+
+
+
+/* section.portfolio {
     position: relative;
     top: 4000px;
     width: 1020px;
@@ -365,22 +494,24 @@ section.portfolio div.services-bg-bottom {
     height: 6px;
     background-color: #ffffff;
 }
-
+*/
 section.about-us {
-    position: relative;
+    position: absolute;
     top: 4000px;
     width: 1020px;
     height: 733px;
     background-color: #f2f2f2;
 }
 
-section.about-us div.portfolio-bg-bottom {
+/* section.about-us div.portfolio-bg-bottom {
     width: 1020px;
     height: 6px;
     background-color: #323746;
-}
+} */
 
 section.get-a-quote {
+    position: absolute;
+    top: 6000px;
     width: 1020px;
     height: 654px;
     background-color: #f06c64;
@@ -390,7 +521,7 @@ section.get-a-quote div.about-us-bg-bottom {
     width: 1020px;
     height: 6px;
     background-color: #ffffff;
-}
+} 
 
 footer {
     width: 1020px;
@@ -410,6 +541,7 @@ footer div.get-a-quote-bg-bottom {
     height: 458px;
     top: 0px;
     left: 0px;
+    z-index: 3;
 }
 
 .iphone-horizontal {
@@ -458,15 +590,14 @@ footer div.get-a-quote-bg-bottom {
     left: 0px;
     top: 0px;
     width: 240px;
-    /* transform: rotate(180deg); */
 }
+
 .iphone__shadow_horiznotal {
     position: absolute;
     left: 0px;
     top: -25px;
     width: 240px;
     transform: rotateX(180deg);
-    /* z-index: 3; */
 }
 
 
@@ -535,15 +666,15 @@ footer div.get-a-quote-bg-bottom {
     left: -8px;
   }
   
-
+/* 
   section.portfolio {
-    /* width: 940px; */
+    width: 940px; 
     margin: auto;
     height: 870px;
     background-color: #2d303a;
-}
+} */
 
-section.portfolio h2 {
+/* section.portfolio h2 {
     position: relative;
     margin: 0px;
     top: 70px;
@@ -555,9 +686,9 @@ section.portfolio h2 {
     font-weight: 900;
     text-align: left;
     letter-spacing: 0.5px;
-}
+} */
 
-section.portfolio p {
+/* section.portfolio p {
     position: relative;
     top: 96px;
     left: 40px;
@@ -569,9 +700,9 @@ section.portfolio p {
     font-weight: 300;
     text-align: left;
     letter-spacing: -0.23px;
-}
+} */
 
-.portfolio nav {
+/* .portfolio nav {
     position: relative;
     top: 62px;
     left: 40px;
@@ -594,29 +725,9 @@ section.portfolio p {
     text-align: left;
 
     text-decoration: none;
-}
+} */
 
-.pictures {
-    position: relative;
-    top: 80px;
-    left: 40px;
-    height: 620px;
-    width: 960px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 
-    /* grid-gap: ; */
-}
-
-.pictures img {
-    position: relative;
-    width: 220px;
-    height: 187px;
-    background-color: #464b5e;
-    /* padding-bottom: 20px; */
-    /* margin-bottom: 20px; */
-}
 
 
 section.about-us {
