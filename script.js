@@ -5,8 +5,9 @@ window.onload = function(){
     addIphoneScreenSwithHandler();
     addSlideLeftHandler();
     addFilterClickHandler();
-
     addImageBorderHandler();
+    addSendBtnHandler();
+    addCloseBtnHandler();
 }
 
 const addFilterClickHandler = () => {
@@ -98,7 +99,6 @@ const addSlideLeftHandler = () => {
     })
 }
 
-
 // Image Border
 const addImageBorderHandler = () => {
     document.querySelector('.pictures').addEventListener('click', (event) => {
@@ -146,5 +146,37 @@ const addImageBorderHandler = () => {
             }
         }
 
+    })
+}
+
+const addSendBtnHandler = () => {
+    document.querySelector('.form__send-btn').addEventListener('click', () => {
+        console.log('send button click');
+        
+        const subject = document.querySelector('.text-subject').value
+        const description = document.querySelector('.text-description').value
+        const required = document.querySelectorAll('.required')
+        if(required[0].validity.valid && required[1].validity.valid){
+            document.querySelector('.message-block').classList.remove('message_hidden')
+            if(subject == ""){
+                document.querySelector('.message__subject').innerText = "Without subject"
+            } else {
+                document.querySelector('.message__subject').innerText = subject
+            }
+
+            if(description == ""){
+                document.querySelector('.message__description').innerText = "Without description"
+            } else {
+                document.querySelector('.message__description').innerText = description
+            }
+        }
+    })
+}
+
+const addCloseBtnHandler = () => {
+    document.querySelector('.message__btn-close').addEventListener('click', () => {
+        document.querySelector('.message__subject').value = ""
+        document.querySelector('.message__description').value = ""
+        document.querySelector('.message-block').classList.add('message_hidden')
     })
 }
