@@ -130,9 +130,6 @@ const addImageBorderHandler = () => {
                 
                 if(con.children[i] == event.target){
                     if(con.children[i].classList.contains('active')){
-                        // con.children[i].style.border = "0px";
-                        // con.children[i].style.top = "0px";
-                        // con.children[i].style.left = "0px";
                         con.children[i].removeAttribute('style')
                         con.children[i].classList.remove('active');
                     } else {
@@ -144,30 +141,9 @@ const addImageBorderHandler = () => {
                     }
                 } else {
                     con.children[i].classList.remove('active');
-                    // console.log('not i:' + i);               
-                    // con.children[i].style.border = "0px";
-                    // con.children[i].style.position = "relative";
-                    // con.children[i].style.top = "0px";
-                    // con.children[i].style.left = "0px";
                     con.children[i].removeAttribute('style')
                 }
             }
-
-
-            // console.log(arr.length)
-            // console.log(con.children.length)
-            // for(let i =0; i< con.children.length; i++){
-            //     document.querySelector('.pictures').removeChild(con.children[i])
-            // }
-            // console.log(arr);
-            
-            // arr.forEach(x => {
-            //     document.querySelector('.pictures').appendChild(x)
-            // });
-
-            // document.querySelectorAll('.pictures')[0].replaceChild(border.appendChild(event.target), event.target)
-            // document.querySelector('.pictures').appendChild(border)
-            
         }
 
     })
