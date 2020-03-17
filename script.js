@@ -142,7 +142,8 @@ const addImageBorderHandler = () => {
                         con.children[i].style.left = "-5px";
                     }
                 } else {
-                    console.log('not i:' + i);               
+                    con.children[i].classList.remove('active');
+                    // console.log('not i:' + i);               
                     con.children[i].style.border = "0px";
                     con.children[i].style.position = "relative";
                     con.children[i].style.top = "0px";
