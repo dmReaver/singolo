@@ -130,9 +130,10 @@ const addImageBorderHandler = () => {
                 
                 if(con.children[i] == event.target){
                     if(con.children[i].classList.contains('active')){
-                        con.children[i].style.border = "0px";
-                        con.children[i].style.top = "0px";
-                        con.children[i].style.left = "0px";
+                        // con.children[i].style.border = "0px";
+                        // con.children[i].style.top = "0px";
+                        // con.children[i].style.left = "0px";
+                        con.children[i].removeAttribute('style')
                         con.children[i].classList.remove('active');
                     } else {
                         con.children[i].classList.add('active')
@@ -144,10 +145,11 @@ const addImageBorderHandler = () => {
                 } else {
                     con.children[i].classList.remove('active');
                     // console.log('not i:' + i);               
-                    con.children[i].style.border = "0px";
-                    con.children[i].style.position = "relative";
-                    con.children[i].style.top = "0px";
-                    con.children[i].style.left = "0px";
+                    // con.children[i].style.border = "0px";
+                    // con.children[i].style.position = "relative";
+                    // con.children[i].style.top = "0px";
+                    // con.children[i].style.left = "0px";
+                    con.children[i].removeAttribute('style')
                 }
             }
 
