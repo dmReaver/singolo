@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header" id="header">
-      <div class="slider__bg">
+      <div class="header__bg">
         <div class="bg header__bg"></div>
         <div class="bg header__border"></div>
       </div>
@@ -16,26 +16,21 @@
         <h1 class="logo__title">SINGOLO</h1>
       </div>
       <nav class="menu">
-        <a class="menu__link menu__link_active" >HOME</a>
-        <a class="menu__link" >SERVICES</a>
-        <a class="menu__link" >PORTFOLIO</a>
-        <a class="menu__link" >ABOUT</a>
-        <a class="menu__link" >CONTACT</a>
+        <a class="menu__link menu__link_active" href="#slider">HOME</a>
+        <a class="menu__link" href="#services">SERVICES</a>
+        <a class="menu__link" href="#portfolio">PORTFOLIO</a>
+        <a class="menu__link" href="#about-us">ABOUT</a>
+        <a class="menu__link" href="#get-a-quote">CONTACT</a>
       </nav>
     </header>
-
-    <section class="slider" id="slider">
-      <!-- <div class="slider__bg">
-        <div class="slider__bg slider_main"></div>
-        <div class="slider__bg slider_border"></div>
-      </div> -->
+    <section class="slider" >
+      <div class="wrapper" id="slider"></div>
       <div class="slider-control">
         <img class="slider-control__left" src="assets/images/chev.png">
         <img class="slider-control__right" src="assets/images/chev_right.png">
       </div> 
 
       <div class="slider__wrapper">
-        
         <div class="slider__item">
           <div class="slider__bg">
             <div class="slider__bg slider_main"></div>
@@ -63,7 +58,8 @@
        
     </section>
 
-    <section class="services" id="services">
+    <section class="services">
+      <div class="wrapper" id="services"></div>
       <div class="services_bg">
         <div class="services__bg services_main"></div>
         <div class="services__bg services_border"></div>
@@ -138,7 +134,8 @@
 
     </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
+      <div class="wrapper" id="portfolio"></div>
       <div class="portfolio-bg">
         <div class="portfolio-bg__main"></div>
         <div class="portfolio-bg__border"></div>
@@ -180,7 +177,8 @@
 
     </section>
 
-    <section class="about-us" id="about-us">
+    <section class="about-us">
+      <div class="wrapper" id="about-us"></div>
       <div class="about-us-bg">
         <div class="about-us-bg__bg"></div>
         <div class="about-us-bg__border"></div>
@@ -228,7 +226,8 @@
       </div>
     </section>
 
-    <section class="get-a-quote" id="get-a-quote">
+    <section class="get-a-quote">
+      <div class="wrapper" id="get-a-quote"></div>
       <div class="get-a-quote-bg">
         <div class="get-a-quote-bg__bg"></div>
         <deiv class="get-a-quote-bg__border"></deiv>
@@ -240,10 +239,10 @@
       </div>
       
       <form  class="form" onsubmit="return false;">
-        <input type="text" name="name" placeholder="Name (Required)" value="qwerty" required class="required">
-        <input type="email" name="email" placeholder="Email (Required)" value="qwerty@example.com" required class="required">
-        <input class="text-subject" type="text" name="subject" value="test" placeholder="Subject">
-        <textarea class="text-description" name="textarea" rows="30" value="Some unimportant text" placeholder="Describe your project in detail..." name="textarea"></textarea>
+        <input type="text" name="name" placeholder="Name (Required)" value="" required class="required">
+        <input type="email" name="email" placeholder="Email (Required)" value="" required class="required">
+        <input class="text-subject" type="text" name="subject" value="" placeholder="Subject">
+        <textarea class="text-description" name="textarea" rows="30" value="" placeholder="Describe your project in detail..." name="textarea"></textarea>
         <button class="form__send-btn" type="submit">Send</button>
       </form>
       <div class="contact-information">
@@ -266,6 +265,8 @@
               <span class="media-linkedin"><img src="assets/icons/linkedin.svg" alt="linkedin"></span>
           </div>
     </footer>
+
+  
 
     <div class="message-block message_hidden">
       <div class="message">

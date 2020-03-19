@@ -7,12 +7,14 @@ body {
     position: relative;
     width: 1020px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 .header {
-    position: relative;
+    position: fixed;
     top: 0px;
     height: 95px;
+    z-index: 4;
 }
 
 .bg {
@@ -36,7 +38,6 @@ body {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: -0.03em;
-
     color: #FFFFFF;
 }
 
@@ -53,6 +54,7 @@ body {
     left: 609px;
     top: 42px;
     justify-content: space-between;
+    
 }
 
 .menu__link {
@@ -95,15 +97,12 @@ body {
     z-index: -1;
 }
 
-
-/* slider */
-
 .slider {
     width: 1020px;
     height: 600px;
     top: 95px;
     left: 0px;
-    position: absolute;
+    position: relative;
     overflow: hidden;
 }
 
@@ -189,8 +188,6 @@ body {
 }
 
 
-/* Services */
-
 .services {
     position: absolute;
     width: 1020px;
@@ -239,7 +236,6 @@ body {
     left: 0;
     top: 0;
     display: block;
-
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
@@ -260,7 +256,6 @@ body {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-    /* word-spacing: 1px; */
     letter-spacing: -0.226px;
     color: #767E9E;
 }
@@ -330,6 +325,7 @@ body {
     text-align: justify;
     color: #767E9E;
 }
+
 .portfolio {
     position: absolute;
     width: 1020px;
@@ -409,7 +405,6 @@ body {
     top: 155px;
 }
 
-
 .filter-list__text {
     position: relative;
     display: inline;
@@ -465,9 +460,6 @@ body {
     height: 727.98px;
     left: 0px;
     top: 0px;
-
-    /* base-white */
-
     background: #F2F2F2;
 }
 
@@ -486,26 +478,17 @@ body {
     height: 101px;
     left: 40px;
     top: 59px;
-    /* background-color: green; */
 }
 
 .about-us__name {
     position: absolute;
     width: 130px;
     height: 40px;
-    /* left: 40px; */
-    /* top: 2124px; */
-
-    /* section-name */
-
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
-
-    /* section-headers */
-
     color: #666D89;
 }
 
@@ -513,7 +496,6 @@ body {
     position: absolute;
     width: 936px;
     height: 47px;
-    /* left: 40px; */
     top: 53px;
     font-family: Lato;
     font-style: normal;
@@ -535,12 +517,10 @@ body {
 }
 
 .profile {
-    /* position: relative; */
     width: 300px;
     height: 443px;
     margin-right: 0px;
-    /* left: 40px;
-    top: 2282px; */
+
 }
 
 .get-a-quote {
@@ -589,19 +569,11 @@ body {
     position: absolute;
     width: 167px;
     height: 40px;
-    /* left: 40px; */
-    /* top: 2857px; */
-
-    /* section-name */
-
     font-family: Lato;
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 36px;
-
-    /* section--light */
-
     color: #F0D8D9;
 }
 
@@ -609,21 +581,12 @@ body {
     position: relative;
     width: 936px;
     height: 47px;
-    /* left: 40px; */
     top: 54px;
-
-    /* section-description */
-
     font-family: Lato;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-    /* or 167% */
-
-
-    /* section--light */
-
     color: #F0D8D9;
     text-align: justify;
     letter-spacing: -0.2px;
@@ -658,7 +621,6 @@ body {
     height: 76px;
     background: #2D303A;
 }
-
 
 .iphone {
     position: absolute;
@@ -695,8 +657,6 @@ body {
     z-index: 3;
 }
 
-
-
 .iphone__screen_layer5 {
     left: -59px;
     top: 137px;
@@ -725,8 +685,7 @@ body {
     transform: rotateX(180deg);
 }
 
-
-  .services-title {
+.services-title {
     position: absolute;
     font-size: 30px;
     line-height: 18px;
@@ -737,8 +696,7 @@ body {
     letter-spacing: 0.3px;
     top: 75px;
     left: 40px;
-  }
-
+}
 
 .message-block {
     position: fixed;
@@ -758,12 +716,12 @@ body {
     padding: 10px;
     background-color: silver;
 }
+
 .message_hidden {
     display: none;
 }
 
-
-h2.get-a-quote {
+/* h2.get-a-quote {
     position: relative;
     font-size: 30px;
     line-height: 18px;
@@ -774,23 +732,23 @@ h2.get-a-quote {
     top: 68px;
     left: 39px;
     letter-spacing: 0.3px;
-}
+} */
 
-p.get-a-quote-paragraph {
-    position: relative;
-    width: 940px;
-    height: 57px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 300;
-    text-align: left;
-    left: 40px;
-    margin: 0px;
-    top: 70px;
-    letter-spacing: -0.06px;
-}
+    /* p.get-a-quote-paragraph {
+        position: relative;
+        width: 940px;
+        height: 57px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #f0d8d9;
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: left;
+        left: 40px;
+        margin: 0px;
+        top: 70px;
+        letter-spacing: -0.06px;
+    } */
 
 
 
@@ -801,10 +759,7 @@ input {
     border-radius: 5px;
     background-color: #d6564f;
     border-color: #d6564f;
-    
 }
-
-
 
 form {
     display: block;
@@ -876,7 +831,13 @@ div.bg-bottom {
     top: 202px;
 }
 
-footer div.wrapper{
+.wrapper {
+    position: relative;
+    /* height: 95px; */
+    top: -95px;
+}
+
+footer{
     width: 1020px;
     margin: auto;
     padding: 0px;
@@ -897,7 +858,6 @@ textarea {
 input::placeholder {
     position: relative;
     top: 1px;
-    /* left: 13px; */
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
@@ -909,8 +869,6 @@ input::placeholder {
 
 textarea::placeholder {
     position: relative;
-    /* top: 5px; */
-    /* left: 13px; */
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
@@ -921,10 +879,10 @@ textarea::placeholder {
   }
 
 
-  .media {
+.media {
     position: absolute;
     width: 152px;
     height: 32px;
     left: 434px;
     top: 22px;
-  }
+}

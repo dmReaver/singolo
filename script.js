@@ -47,8 +47,6 @@ const addFilterLinkActive = (target) => {
     target.classList.add('filter-list__item_active')
 }
 
-
-// menu click handler
 const addMenuClickHandler = () => {
     document.querySelector('.menu').addEventListener('click', (event) => {
         if(event.target.classList.contains('menu__link')){
@@ -68,7 +66,6 @@ const addMenuLinkActive = (target) => {
     target.classList.add('menu__link_active')
 }
 
-// screen switch
 const addIphoneScreenSwithHandler = () => {
     document.querySelector('.slider__content').addEventListener('click', (event) => {
         if(event.target.classList.contains('iphone__screen')){
@@ -85,8 +82,6 @@ const switchScreen = (target) => {
     }
 }
 
-
-// slider
 const addSlideLeftHandler = () => {
     document.querySelector('.slider-control__left').addEventListener('click', (event) => {
         console.log('left');
@@ -99,7 +94,6 @@ const addSlideLeftHandler = () => {
     })
 }
 
-// Image Border
 const addImageBorderHandler = () => {
     document.querySelector('.pictures').addEventListener('click', (event) => {
         let border = document.createElement('div');
