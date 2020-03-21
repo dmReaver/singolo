@@ -88,8 +88,9 @@ const addMenuLinkActive = (target) => {
 
 const addIphoneScreenSwithHandler = () => {
     document.querySelector('.slider__content').addEventListener('click', (event) => {
-        if(event.target.classList.contains('iphone__screen')){
-            switchScreen(event.target);
+        if(event.target.classList.contains('iphone__button')){
+            console.log(event);
+            switchScreen(event.target.offsetParent.childNodes[3]);
         }
     })
 }

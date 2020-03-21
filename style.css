@@ -671,6 +671,20 @@ body {
     transform: rotate(270deg);
 }
 
+.iphone__button {
+    position: absolute;
+    top: 407px;
+    left: 85.5px;
+    height: 41.88px;
+    width: 41.88px;
+    border-radius: 25px;
+}
+
+.iphone__button:hover {
+    cursor: pointer;
+    border: solid 1px gray;
+}
+
 .iphone__screen_switched-off {
     background-image: url();
 }
