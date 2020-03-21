@@ -3,11 +3,11 @@
 window.onload = function(){
     addMenuClickHandler();
     addIphoneScreenSwithHandler();
-    addSlideLeftHandler();
     addFilterClickHandler();
     addImageBorderHandler();
     addSendBtnHandler();
     addCloseBtnHandler();
+    addControlClickHandler();
 }
 
 const addFilterClickHandler = () => {
@@ -80,18 +80,6 @@ const switchScreen = (target) => {
     } else {
         target.classList.add('iphone__screen_switched-off')
     }
-}
-
-const addSlideLeftHandler = () => {
-    document.querySelector('.slider-control__left').addEventListener('click', (event) => {
-        console.log('left');
-        // console.log(event.target);
-        
-        let items = document.querySelectorAll('.slider__item')
-        // items.forEach(element => {
-            
-        // });
-    })
 }
 
 const addImageBorderHandler = () => {
@@ -172,5 +160,51 @@ const addCloseBtnHandler = () => {
         document.querySelector('.message__subject').value = ""
         document.querySelector('.message__description').value = ""
         document.querySelector('.message-block').classList.add('message_hidden')
+    })
+}
+
+
+const addControlClickHandler = () => {
+    let slider = document.querySelector('.slider__wrapper')
+    let slider_item = document.querySelectorAll('.slider__wrapper>div')
+
+    let current_wrapper = 0;
+    let current_slide_item1 = 0;
+    let current_slide_item2 = 0;
+
+    document.querySelectorAll('.slider-control>div').forEach( el => {
+        el.addEventListener('click', (event) => {
+            let direction;
+            if(event.target.classList.contains('slider-control__left')){
+                direction = 'left';
+                console.log(direction);
+                
+                if(current_slide_item1 != current_slide_item2){
+                    current_slide_item1-= 2;
+                    slider_item[0].style.transform = 'translateX(' + current_slide_item1 + '00%)'
+                } else {
+                    current_slide_item2-= 2;
+                    slider_item[1].style.transform = 'translateX(' + current_slide_item2 + '00%)'
+                }
+                window.setTimeout(100)
+                current_wrapper++;
+                slider.style.transform = 'translateX(' + current_wrapper + '00%)'
+            } else if(event.target.classList.contains('slider-control__right')){
+                direction = 'right';
+                console.log(direction);
+                current_wrapper--;
+                slider.style.transform = 'translateX(' + current_wrapper + '00%)'
+
+                if(current_slide_item1 < current_slide_item2){
+                    current_slide_item1+= 2;
+                    slider_item[0].style.transform = 'translateX(' + current_slide_item2 + '00%)'
+                } else {
+                    current_slide_item2+= 2;
+                    slider_item[1].style.transform = 'translateX(' + current_slide_item1 + '00%)'
+                }
+            } else {
+                throw new Error('wrong direction')
+            }
+        })
     })
 }

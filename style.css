@@ -139,14 +139,17 @@ body {
 
 
 .slider__item {
-    position: absolute;
+    /* position: absolute;
     width: 1020px;
     height: 594px;
     left: 0px;
     top: 0px;
     flex: 0 0 auto;
     overflow: hidden;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
+
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .slider__item_inactive {
@@ -172,7 +175,7 @@ body {
 }
 
 .slider-control__left {
-    position: relative;
+    position: absolute;
     left: 0px;
     top: 0px;
     cursor: pointer;
