@@ -1,13 +1,33 @@
 "use strict"
 
 window.onload = function(){
-    addMenuClickHandler();
+    // addMenuClickHandler();
     addIphoneScreenSwithHandler();
     addFilterClickHandler();
     addImageBorderHandler();
     addSendBtnHandler();
     addCloseBtnHandler();
     addControlClickHandler();
+
+    window.addEventListener("scroll", () =>{
+        if(window.pageYOffset <600){
+            removeMenuLinkActive();
+            addMenuLinkActive(document.querySelectorAll('.menu>a')[0])
+        } else if(window.pageYOffset >= 600 && window.pageYOffset <1100) {
+            removeMenuLinkActive();
+            addMenuLinkActive(document.querySelectorAll('.menu>a')[1])
+        } else if(window.pageYOffset >= 1100 && window.pageYOffset <1970) {
+            removeMenuLinkActive();
+            addMenuLinkActive(document.querySelectorAll('.menu>a')[2])
+        } else if(window.pageYOffset >= 1970 && window.pageYOffset <2581) {
+            removeMenuLinkActive();
+            addMenuLinkActive(document.querySelectorAll('.menu>a')[3])
+        } else if(window.pageYOffset >= 2581) {
+            removeMenuLinkActive();
+            addMenuLinkActive(document.querySelectorAll('.menu>a')[4])
+        }
+    })
+
 }
 
 const addFilterClickHandler = () => {
@@ -157,9 +177,11 @@ const addSendBtnHandler = () => {
 
 const addCloseBtnHandler = () => {
     document.querySelector('.message__btn-close').addEventListener('click', () => {
-        document.querySelector('.message__subject').value = ""
-        document.querySelector('.message__description').value = ""
-        document.querySelector('.message-block').classList.add('message_hidden')
+        document.querySelector('.message__subject').value = "";
+        document.querySelector('.message__description').value = "";
+        document.querySelector('.message-block').classList.add('message_hidden');
+        document.querySelectorAll('input').forEach(x => x.value = "");
+        document.querySelector('textarea').value = "";
     })
 }
 

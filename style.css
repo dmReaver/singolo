@@ -2,12 +2,15 @@
     margin-top: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: auto;
     position: relative;
     width: 1020px;
     padding: 0px;
-    scroll-behavior: smooth;
 }
 
 .header {
@@ -171,7 +174,6 @@ body {
     height: 27px;
     left: 41px;
     top: 280px;
-    z-index: 1;
 }
 
 .slider-control__left {
