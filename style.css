@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    margin: auto;
     position: relative;
     width: 1020px;
     padding: 0px;
@@ -18,11 +17,12 @@ body {
     top: 0px;
     height: 95px;
     z-index: 4;
+    width: 1020px;
 }
 
 .bg {
     height: 95px;
-    width: 1020px;
+    width: inherit;
 }
 
 .logo {
@@ -54,7 +54,7 @@ body {
     display: flex;
     width: 371px;
     height: 14px;
-    left: 609px;
+    right: 40px;
     top: 42px;
     justify-content: space-between;
     
@@ -70,7 +70,6 @@ body {
     text-align: justify;
     letter-spacing: -0.035em;
     color: #FFFFFF;
-
     text-decoration: none;
 }
 
@@ -86,7 +85,7 @@ body {
 .header__bg {
     position: absolute;
     height: 89px;
-    width: 1020px;
+    width: inherit;
     top: 0px;
     background-color: #2d303a;
     z-index: -1;
@@ -138,19 +137,11 @@ body {
 .slider__wrapper {
     display: flex;
     transition: transform 0.6s ease;
+    height: inherit;
 }
 
 
 .slider__item {
-    /* position: absolute;
-    width: 1020px;
-    height: 594px;
-    left: 0px;
-    top: 0px;
-    flex: 0 0 auto;
-    overflow: hidden;
-    flex-wrap: nowrap; */
-
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -194,25 +185,25 @@ body {
 
 
 .services {
-    position: absolute;
+    position: relative;
     width: 1020px;
     height: 500px;
     left: 0px;
-    top: 695px;
+    top: 95px;
 }
 
 .services_bg {
     position: relative;
-    width: 1020px;
-    height: 500px;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
 }
 
 .services_main {
     position: relative;
-    width: 1020px;
-    height: 494px;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
     background: #F2F2F2;
@@ -220,16 +211,16 @@ body {
 
 .services_border {
     position: relative;
-    width: 1020px;
+    width: inherit;
     height: 6px;
     left: 0px;
-    top: 0px;
+    bottom: 6px;
     background: #FFFFFF;
 }
 
 .services-header {
     position: absolute;
-    width: 936px;
+    width: calc(100% - 80px);
     height: 101px;
     left: 40px;
     top: 59px;
@@ -251,7 +242,7 @@ body {
 
 .services-header__description {
     position: relative;
-    width: 940px;
+    width: 100%;
     height: 47px;
     left: 0px;
     top: 18px;
@@ -267,13 +258,15 @@ body {
 
 .services-list {
     position: absolute;
-    width: 940px;
+    width: calc(100% - 80px);
     height: 228px;
     left: 40px;
     top: 220px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "a a a"
+        "a a a"
+    ;
 }
 
 .services-item {
@@ -332,41 +325,41 @@ body {
 }
 
 .portfolio {
-    position: absolute;
+    position: relative;
     width: 1020px;
     height: 870px;
     left: 0px;
-    top: 1195px;
+    top: 95px;
 }
 
 .portfolio-bg {
-    position: absolute;
-    width: 1020px;
-    height: 870px;
+    position: relative;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
 }
 
 .portfolio-bg__main {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
-    width: 1020px;
-    height: 864px;
+    width: inherit;
+    height: inherit;
     background: #2D303A;
 }
 
 .portfolio-bg__border {
     position: relative;
-    width: 1020px;
+    width: inherit;
     height: 6px;
     left: 0px;
-    top: 864px;
+    bottom: 6px;
     background: #323746;
 }
 
 .portfolio-header {
-    position: relative;
+    position: absolute;
     width: 936px;
     height: 100.82px;
     left: 40px;
@@ -441,6 +434,10 @@ body {
 
 .pictures {
     display: grid;
+    /* grid-template-areas: 
+    "a a a a"
+    "a a a a"
+    "a a a a"; */
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4,1fr);
     position: absolute;
@@ -452,17 +449,25 @@ body {
 
 
 .about-us {
-    position: absolute;
+    position: relative;
     width: 1020px;
     height: 733px;
     left: 0px;
-    top: 2065px;
+    top: 95px;
+}
+
+.about-us-bg{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    left: 0px;
+    top: 0px;
 }
 
 .about-us-bg__bg {
     position: relative;
-    width: 1020px;
-    height: 727.98px;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
     background: #F2F2F2;
@@ -470,16 +475,16 @@ body {
 
 .about-us-bg__border {
     position: relative;
-    width: 1020px;
+    width: inherit;
     height: 5.08px;
     left: 0px;
-    top: 727.98px;
+    bottom: 5.08px;
     background: #FFFFFF;
 }
 
 .about-us__header {
     position: absolute;
-    width: 936px;
+    width: calc(100% - 40px);
     height: 101px;
     left: 40px;
     top: 59px;
@@ -499,7 +504,7 @@ body {
 
 .about-us__description {
     position: absolute;
-    width: 936px;
+    width: calc(100% - 40px);
     height: 47px;
     top: 53px;
     font-family: Lato;
@@ -508,11 +513,12 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #767E9E;
+    text-align: justify;
 }
 
 .profiles {
     position: absolute;
-    width: 940px;
+    width: calc(100% - 80px);
     height: 443px;
     left: 40px;
     top: 217px;
@@ -529,42 +535,42 @@ body {
 }
 
 .get-a-quote {
-    position: absolute;
-    width: 1020px;
+    position: relative;
+    width: inherit;
     height: 654px;
     left: 0px;
-    top: 2798px;
+    top: 95px;
 }
 
 .get-a-quote-bg {
     position: relative;
-    width: 1020px;
-    height: 654px;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
 }
 
 .get-a-quote-bg__bg {
-    position: absolute;
-    width: 1020px;
-    height: 648px;
+    position: relative;
+    width: inherit;
+    height: inherit;
     left: 0px;
     top: 0px;
     background: #F06C64;
 }
 
 .get-a-quote-bg__border {
-    position: absolute;
-    width: 1020px;
+    position: relative;
+    width: inherit;
     height: 6px;
     left: 0px;
-    top: 648px;
+    bottom: 6px;
     background: #EA676B;
 }
 
 .get-a-quote__header {
     position: absolute;
-    width: 936px;
+    width: inherit;
     height: 101px;
     left: 40px;
     top: 59px;
@@ -584,7 +590,7 @@ body {
 
 .get-a-quote__description {
     position: relative;
-    width: 936px;
+    width: calc(100% - 80px);
     height: 47px;
     top: 54px;
     font-family: Lato;
@@ -614,16 +620,18 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     width: 1020px;
     height: 76px;
     left: 0px;
-    top: 3452px;
+    top: 95px;
+    margin: 0px;
 }
 
 .footer_bg {
-    width: 1020px;
-    height: 76px;
+    position: relative;
+    width: inherit;
+    height: inherit;
     background: #2D303A;
 }
 
@@ -740,37 +748,6 @@ body {
     display: none;
 }
 
-/* h2.get-a-quote {
-    position: relative;
-    font-size: 30px;
-    line-height: 18px;
-    color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 900;
-    text-align: left;
-    top: 68px;
-    left: 39px;
-    letter-spacing: 0.3px;
-} */
-
-    /* p.get-a-quote-paragraph {
-        position: relative;
-        width: 940px;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #f0d8d9;
-        font-family: "Lato";
-        font-weight: 300;
-        text-align: left;
-        left: 40px;
-        margin: 0px;
-        top: 70px;
-        letter-spacing: -0.06px;
-    } */
-
-
-
 input {
     width: 602px;
     height: 35px;
@@ -813,8 +790,8 @@ div.contact-information p {
     position: relative;
     top: -14px;
     left : 0px;
-    
-    width: 300px;
+    text-align: justify;
+    width: inherit;
     height: 175px;
     font-size: 12px;
     line-height: 22px;
@@ -904,4 +881,313 @@ textarea::placeholder {
     height: 32px;
     left: 434px;
     top: 22px;
+}
+
+
+@media all and (max-width: 1020px){
+    /* body {
+        width: 768px;
+    } */
+
+    .header {
+        width: 768px;
+    }
+
+    .slider {
+        width: 768px;
+        height: 451px;
+    }
+
+    .services {
+        height: 674px;
+        width: 768px;
+    }
+
+    .services-header {
+        top: 39px;
+
+    }
+
+    .services-list {
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a";
+        grid-row-gap: 39px;
+        /* grid-column-gap: 53px; */
+    }
+
+    .portfolio {
+        width: 768px;
+        height: 1102px;
+    }
+
+    .pictures {
+        grid-template-areas: 
+        "a a a"
+        "a a a"
+        "a a a"
+        "a a a";
+        grid-template-rows: none;
+        grid-template-columns: none;
+        width: calc(100% - 80px);
+        grid-gap: 20px;
+    }
+
+    .about-us {
+        width: 768px;
+        height: 669px;
+    }
+
+    .profile {
+        width: 220px;
+        height: 360px;
+    }
+
+    .profile > img {
+        width: inherit;
+        height: 220px;
+    }
+
+    .get-a-quote {
+        width: 768px;
+        height: 631px;
+    }
+
+    .form {
+        width: 442px;
+        /* height: 373px; */
+    }
+
+    input {
+        width: inherit;
+        padding-left: 0px;
+    }
+
+    textarea {
+        width: calc(100% - 25px);
+        /* padding: 7px; */
+    }
+
+    .contact-information {
+        width: 221px;
+        height: 225px;
+        left: 510px;
+        top: 217px;
+    }
+
+    .footer {
+        width: 768px;
+    }
+
+
+    .pictures > img {
+        width: 216px;
+        height: 184px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .header {
+        width: 375px;
+    }
+
+
+
+    .menu {
+        display: none;
+    }
+
+    .slider {
+        top: 71px;
+        width: 375px;
+        height: 221px;
+    }
+
+    .services {
+        top: 71px;
+        width: 375px;
+        height: 1032px;
+    }
+
+    .services-header {
+        left: 30px;
+        width: calc(100% - 60px);
+    }
+
+    .services-list {
+        position: absolute;
+        grid-template-areas: 
+        "a"
+        "a"
+        "a"
+        "a"
+        "a"
+        "a";
+        grid-row-gap: 10px;
+        top: 320px;
+        left: 30px;
+    }
+
+    .portfolio {
+        top: 71px;
+        width: 375px;
+        height: 884px;
+    }
+
+    .portfolio-header {
+        width: inherit;
+    }
+
+    .portfolio-header__description {
+        width: calc(100% - 80px);
+    }
+
+    .filter-list {
+        top: 210px;
+    }
+
+    .pictures {
+        width: 315px;
+        height: 553px;
+        top: 250px;
+        grid-template-areas: 
+        "a a"
+        "a a"
+        "a a"
+        "a a";
+        overflow: hidden;
+        left: 30px;
+        grid-gap: 13px;
+    }
+
+    .pictures > img {
+        width: 151px;
+        height: 128px;
+    }
+
+    .about-us {
+        top: 71px;
+        width: 375px;
+        height: 1676px;
+    }
+
+    .about-us__header {
+        left: 30px;
+        width: calc(100% - 30px);
+        top: 30px;
+    }
+
+    .about-us__description {
+        top: 40px;
+    }
+
+    .profiles {
+        width: calc(100% - 60px);
+        left: 30px;
+        top: 321px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-areas: 
+        "a"
+        "a"
+        "a";
+    }
+
+    .profile {
+        width: 315px;
+        height: 440px;
+    }
+
+    .profile > img {
+        width: 315px;
+        height: 315px;
+    }
+
+    .profile > p {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: justify;
+        color: #767E9E;
+    }
+
+    .profile__description {
+        position: relative;
+        top: -10px;
+    }
+    .profile > section.social {
+        position: relative;
+        top: -20px;
+    }
+
+
+
+    .get-a-quote {
+        top: 71px;
+        width: 375px;
+        height: 969px;
+    }
+
+    .get-a-quote__header {
+        left: 30px;
+        top: 30px;
+        width: calc(100%);
+    }
+
+    .get-a-quote__description {
+        width: calc(100% - 60px);
+    }
+
+    .form {
+        left: 30px;
+        top: 290px;
+        width: 315px;
+    }
+
+    .form__send-btn {
+        width: inherit;
+        height: 50px;
+    }
+
+    .contact-information {
+        /* width: 221px; */
+        /* height: 225px; */
+        left: 30px;
+        top: 730px;
+    }
+
+    
+
+    .footer {
+        top: 71px;
+        width: 375px;
+    }
+
+    .media {
+        /* width: 152px; */
+        left: 111.5px;
+    }
+
+    .logo {
+        top: 20.5px;
+        left: 125.5px;
+    }
+
+    .header {
+        height: 71px;
+    }
+    .header__bg {
+        height: 71px;
+    }
+    .header__border {
+        display: none;
+    }
+
+    .wrapper {
+        top: -71px;
+    }
+
 }
